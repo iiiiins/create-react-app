@@ -1,32 +1,183 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Orbitron:wght@900&display=swap");
+
+/* Custom styles for the Popover container */
+.custom-popover {
+  z-index: 1300; /* Ensure it's above other elements */
+}
+
+/* Custom styles for the Popover Paper */
+.custom-paper {
+  background-color: #2a2a2a; /* Dark background */
+  color: #fff; /* White text */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  padding: 10px; /* Inner padding */
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/* Typography inside the Popover */
+.custom-paper .MuiTypography-root {
+  font-size: 0.7rem; /* Smaller font size */
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+/* Input fields inside the Popover */
+.custom-paper .MuiTextField-root {
+  background-color: #3a3a3a; /* Slightly lighter background for inputs */
+  border-radius: 4px;
+}
+
+/* Checkbox labels inside the Popover */
+.custom-paper .MuiFormControlLabel-root {
+  margin-bottom: 0px;
+}
+
+/* Add hover effects if needed */
+.custom-paper .MuiMenuItem-root:hover {
+  background-color: #444; /* Highlighted background */
+}
+
+.custom-paper input {
+  font-size: 0.6rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.custom-paper .subtitle1 {
+  font-size: 1rem;
+}
+
+.settings-boxes {
+  margin: -5px;
+  padding: 0px;
+  padding-left: 5px;
+  padding-right: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.css-kmnzss {
+  justify-content: space-between;
+}
+
+.gold-header {
+  background-color: #ffd700; /* Gold-like yellow background */
+  font-weight: bold; /* Bold text for the cell */
+  align-items: start !important;
+  text-align: center; /* Center-align the text */
+}
+
+.gold-list {
+  background-color: #3b3602;
+  /*color: black !important;*/
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.gold-header .MuiTableSortLabel-root {
+  color: #000 !important; /* Black text for contrast */
+  font-weight: bold; /* Make the text bold */
+  justify-content: center; /* Align the text centrally */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.gold-header .MuiTableSortLabel-root:hover {
+  color: #333 !important; /* Darker hover text */
 }
 
-.App-link {
-  color: #61dafb;
+.gold-header .MuiTableSortLabel-icon {
+  color: #000 !important; /* Black sort icon */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.silver-header {
+  background-color: #94938b; /* Silver-like  background */
+  font-weight: bold; /* Bold text */
+  text-align: center; /* Center-align text */
+}
+
+.silver-list {
+  background-color: #2a2a2a;
+}
+
+.silver-header .MuiTableSortLabel-root {
+  color: #000 !important; /* Black text for contrast */
+  font-weight: bold; /* Bold text */
+}
+
+.silver-header .MuiTableSortLabel-root:hover {
+  color: #333 !important; /* Darker hover text */
+}
+
+.bronze-header {
+  background-color: #e9c18a; /* Silver-like  background */
+  font-weight: bold; /* Bold text */
+  text-align: center; /* Center-align text */
+}
+.bronze-list {
+  background-color: #362d21;
+}
+
+.bronze-header .MuiTableSortLabel-root {
+  color: #000 !important; /* Black text for contrast */
+  font-weight: bold; /* Bold text */
+}
+
+.bronze-header .MuiTableSortLabel-root:hover {
+  color: #333 !important; /* Darker hover text */
+}
+.copper-header {
+  background-color: #9c6820; /* Silver-like  background */
+  font-weight: bold; /* Bold text */
+  text-align: center; /* Center-align text */
+}
+.copper-list {
+  background-color: #352008;
+}
+
+.copper-header .MuiTableSortLabel-root {
+  color: #000 !important; /* Black text for contrast */
+  font-weight: bold; /* Bold text */
+}
+
+.copper-header .MuiTableSortLabel-root:hover {
+  color: #333 !important; /* Darker hover text */
+}
+
+.players-list {
+  font-family: "Orbitron", serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 900 !important;
+  font-style: normal !important;
+  font-size: 28px !important;
+  text-transform: lowercase !important;
+}
+
+.players-list .MuiTableCell-root {
+  padding: 8px; /* Adjust padding for a tighter layout */
+}
+
+.games-list {
+  font-family: "Roboto Mono", monospace !important;
+  font-size: 10px !important; /* Adjust font size as needed */
+  /*font-weight: 200;*/
+  font-style: normal;
+  text-transform: uppercase; /* Or use uppercase for all caps */
+  text-align: center;
+}
+
+.games-list .MuiTableCell-root {
+  padding: 8px; /* Adjust padding for a tighter layout */
+}
+
+.numbers-list {
+  font-family: "Nunito", serif !important;
+  font-optical-sizing: auto !important;
+  font-weight: 200 !important;
+  font-style: normal !important;
 }
